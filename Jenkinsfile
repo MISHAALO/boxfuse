@@ -35,7 +35,7 @@ pipeline {
     stage('Run docker on devbe') {
       steps {
              sh 'ssh-keyscan -H devbe >> ~/.ssh/known_hosts'
-             sh """ssh root@instance-3<< EOF 
+             sh """ssh root@devbe<< EOF 
              docker run -d -p 8081:8080 jenkunsHeloo:1.0.0'
              exit
              EOF"""
