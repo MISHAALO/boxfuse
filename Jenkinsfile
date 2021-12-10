@@ -10,7 +10,7 @@ pipeline {
 
   stages {
 
-    stage('Checkout code') {
+    stage('git clone') {
       steps {
         git 'https://github.com/MISHAALO/jenkunsHeloo.git'
        
