@@ -3,7 +3,6 @@ pipeline {
           docker{
              image 'misha/agent'
              registryCredentialsId '64588247-86be-4483-9651-9900ec8819c5'
-             args '-v /var/run/docker.sock:/var/run/docker.sock -u root '
           }
 
   }
